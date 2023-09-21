@@ -1,0 +1,209 @@
+html, body {
+    margin: 0;
+}
+body {
+    color: rgb(75, 48, 14);
+    background: url("fundo-site.jpg") fixed;
+    background-size: couver;
+    font-family: 'Lato', sans-serif;
+    
+}
+
+hr {
+    margin: 0;
+}
+p {
+    font-size: 21px;
+    letter-spacing: 0.5px;
+}
+section {
+    padding: 2% 8% 5%;
+}
+.secoes {  
+    margin-bottom: 116px;   
+}
+.destaque-light {
+    background-color: rgb(240, 222, 200);
+}
+.destaque-dark {
+    background-color: rgb(207, 172, 126);
+}
+.justificado {
+    text-align: justify;
+}
+.centralizado {
+    text-align: center;
+}
+.referencia:link, .referencia:visited {
+    color: rgb(75, 48, 14);
+    text-decoration: none;
+}
+.referencia:hover {
+    text-decoration: underline;
+}
+#ods ,#lista-icones, #sobre {
+    display: flex;
+}
+.centro {
+    justify-content: center;
+    align-items: center;
+}
+
+
+header {
+    background-color: rgba(191, 216, 180, 0.7);
+    height: 75px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+#logo {
+    height: 60px;
+    position: absolute;
+    top: 10px;
+    margin-left: 5%;
+}
+#menu {
+    float: right;
+    margin-top: 5px;
+    margin-right: 2%;
+    list-style: none;
+}
+li {
+    float: left;
+    padding: 20px 10px;
+    font-weight: bold;
+}
+li:hover {
+    background-color: #02311662;
+    border-radius: 10px;
+}
+
+#vidaterrestre {
+    background-image: url("fundo-cabecalho.jpg");
+    background-size: cover;
+    height: 100%;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 3px #023116;
+    padding: 8% 20% 5%;
+    font-size: 20px;
+}
+h1 {
+    letter-spacing: 5px;
+}
+#acao:link, #acao:visited {
+    border: 2px solid #023116;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+#acao:hover, #acao:active {
+    background-color: #023116;
+}
+
+
+.duas-colunas {
+    padding: 0 5%;
+    width: 40%;
+}
+
+
+#redeser {
+    margin: auto 100px;
+    padding-top: 20px;
+}
+.tableauPlaceholder, .tableauViz {
+    max-height: 90%;
+    max-width: 90%;
+    display: block;
+    margin: auto;
+}
+
+
+#desertificacao {
+    height: 55%;
+}
+#lista-icones .tres-colunas {
+    width: 25%;
+    padding: 0 5%;
+}
+.detalhes {
+    overflow-y: auto;
+    max-height: 250px;
+}
+.detalhes .icones {
+    height: 30%;
+    border-radius: 50%;
+    background-color: rgb(191, 216, 180);
+    padding: 10px;
+    display: block;
+    margin: auto;
+}
+.icones:hover {
+    background-color: #023116;
+}
+
+
+#minha-foto {
+    border-radius: 50%;
+    width: 39%;
+    max-width: 200px;
+    min-width: 120px;
+    display: block;
+    margin: auto;
+}
+
+footer {
+    background-color: rgb(191, 216, 180);
+    padding: 8px 20px 5px;
+}
+#copyright {
+    padding: 0 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media all and (max-width: 768px) {
+    html {
+        min-width: 100%;
+    }
+    #vidaterrestre h2 {
+        font-size: 25px;
+    }
+    p {
+        font-size: 18px;
+    }
+    #menu {
+        visibility: hidden;
+    }
+    .responsivo {
+        display: flex;
+        flex-direction: column;
+    } /*problemas com a responsividade - ver inspecionar*/
+    .duas-colunas {
+        width: 90%;
+    }
+    #logo {
+        left: 30%;
+    }
+    #redeser {
+        width: 70%;
+        margin-left: 50px;
+    }
+    #desertificacao {
+        height: 160%;
+    }
+    #lista-icones {
+        display: block;
+        margin: auto;
+        width: 65%;
+        height: 30%;
+    }
+    #lista-icones .tres-colunas {
+        width: 80%;
+        height: 90%;
+    }
+}
